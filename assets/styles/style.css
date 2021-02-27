@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+nav a{font-size:15px;font-weight:400;text-decoration:none;color:black;margin-right:30px}
+nav {background-color:white;position:fixed;top:0;width:100%;height:10%}
+nav a:hover{text-decoration: underline}
+.navbar{float:right;padding-right:5%}
+.profpic{height:35px;width:35px;border-radius:50%;}
+footer{color:black;background-color:white;text-align:center;font-weight:bold;width:100%;position:fixed;padding-top:90px}
+body{background-color: white;}
+.logo{display: block;margin-left: auto; margin-right: auto;width: 50%;padding-top:15%}
+.search{margin-left:25%;width:45%;padding:20px}
+.searchbutton{width:5%;cursor: pointer;padding:20px;}
+.dropdown {position: relative;display: inline-block;margin-right:30px}
+.dropbtn {background-color:white;border: none;}
+.dropdown:hover .dropdown-content {display: block;}
+.dropdown-content {display: none;position: absolute;}

@@ -1,0 +1,66 @@
+<!--
+  Nama: Kent Adams
+  NIM: 16520225
+-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Small Project 1 ARC</title>
+    <link href="assets/styles/style.css" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <nav>
+        <table style="border: 1px solid transparent" class=navbar>
+          <tr>
+            <th><a href="https://mail.google.com/">Gmail</a></th>
+              <th><a href="https://www.google.co.id/imghp">Images</a></th>
+              <th>
+                <!-- addon dropdown-->
+                <div class="dropdown">
+                  <button class="dropbtn"><img src="assets/images/Button.png"></button>
+                  <div class="dropdown-content">
+                    <a href="https://myaccount.google.com/">Accounts</a>
+                    <a href="https://www.google.co.id/webhp?tab=rw">Search</a>
+                    <a href="https://www.google.co.id/maps">Maps</a>
+                    <a href="https://www.youtube.com/">YouTube</a>
+                    <a href="https://play.google.com/">Play</a>
+                    <a href="https://news.google.com/">News</a>
+                  </div>
+                </div>
+              </th>
+              <th><img src="assets/images/pp.jpg" alt="assets/images/alternatepp.jpg" class="profpic"></th>
+          </tr>
+        </table>
+      </nav>
+    </header>
+    <main>
+      <div id=landing>
+        <section>
+          <img src="assets/images/ARCsearch.png" class=logo>
+        </section>
+        <form id='search'>
+          <input type="text" placeholder="Search or type a URL" class=search id='query'>
+          <button type="submit" class=searchbutton><i class="fa fa-search"></i></button>
+        </form>
+        <script>
+          const f = document.getElementById('search');
+          const q = document.getElementById('query');
+          const google = 'https://www.google.com/search?q=';
+          function submitted(event) {
+            event.preventDefault();
+            const url = google + q.value;
+            const win = window.open(url, '_blank');
+            win.focus();}
+          f.addEventListener('submit', submitted);
+        </script>
+    </main>
+    <footer>
+<p>ARCsearch</p>
+<p>powered by google.com</p>
+</footer>
+  </body>
+</html>
